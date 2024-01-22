@@ -25,7 +25,8 @@ The static and dynamic models underwent comprehensive evaluation, utilizing the 
 
 <img src="https://github.com/AnasElbattra/Continuous-Evaluation-with-Kafka/assets/75434006/1469732f-1670-4457-ba12-b109661f4949" alt="Dynamic"/>
 
+--- 
+
 **Advantages and Limitations:** The dynamic model, capable of retraining with new data, generally showed improved accuracy, emphasizing the benefits of integrating real-time data. However, the effectiveness of retraining varied across different data batches, emphasizing the need for robust models capable of handling diverse data landscapes. This project underscores the importance of adapting machine learning models to evolving cybersecurity challenges.
 
----
 
