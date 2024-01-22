@@ -10,19 +10,20 @@ For feature selection, the f_classif method was preferred for its ability to sta
 ### Model Comparison and Hyperparameter Tuning
 The project employed two robust machine learning algorithms, XGBoost and Random Forest, known for their efficacy in handling cybersecurity data complexities. A thorough hyperparameter tuning process, including an exhaustive grid search, was conducted to optimize model performance. The resulting F1 scores were visualized to provide a clear comparison between baseline and tuned models.
 
-<img src="https://github.com/AnasElbattra/Book-Recommendation-ChatBot/assets/75434006/2914dbe4-3824-4e91-a19a-97555d2945a8" alt="Bias" width="200"/>
+<img src="https://github.com/AnasElbattra/Continuous-Evaluation-with-Kafka/assets/75434006/79d43be0-72e9-49bd-8d89-f95cd6e2c0a9" alt="Static"/>
 
 ## Dynamic Analysis
 
-In the dynamic phase, our project embraced continuous learning principles with Kafka, focusing on real-time cybersecurity threat detection using windows of 1,000 datapoints for consumer data.
+In the dynamic phase, our project embraced continuous learning principles with Kafka, focusing on real-time cybersecurity threat detection using windows of 1,000 data points for consumer data.
 
 ### Continuous Learning Mechanism
 A transparent and effective training reevaluation process was established. Initially, the dynamic model mirrored the static model. However, to enhance the dynamic model's performance, a threshold of 0.79 was set. If the dynamic model score fell below this threshold, a retraining process was initiated, updating weights in the XGBoost model and subsequently reevaluating.
 
 ### Evaluation Metrics and Results
-The static and dynamic models underwent comprehensive evaluation, utilizing the F1 score as the primary metric due to its balance between precision and recall. The results were insightful, revealing variable accuracy in the static model across different data batches. The dynamic model, updated with new data, demonstrated comparable accuracy before retraining, indicating potential benefits of continuous learning. Post-retraining, the dynamic model exhibited further improvements in accuracy.
+The static and dynamic models underwent comprehensive evaluation, utilizing the F1 score as the primary metric due to its balance between precision and recall. The results were insightful, revealing variable accuracy in the static model across different data batches. The dynamic model, updated with new data, demonstrated comparable accuracy before retraining, indicating the potential benefits of continuous learning. Post-retraining, the dynamic model exhibited further improvements in accuracy.
 
-<img src="https://github.com/AnasElbattra/Book-Recommendation-ChatBot/assets/75434006/2914dbe4-3824-4e91-a19a-97555d2945a8" alt="Bias" width="200"/>
+
+<img src="https://github.com/AnasElbattra/Continuous-Evaluation-with-Kafka/assets/75434006/1469732f-1670-4457-ba12-b109661f4949" alt="Dynamic"/>
 
 **Advantages and Limitations:** The dynamic model, capable of retraining with new data, generally showed improved accuracy, emphasizing the benefits of integrating real-time data. However, the effectiveness of retraining varied across different data batches, emphasizing the need for robust models capable of handling diverse data landscapes. This project underscores the importance of adapting machine learning models to evolving cybersecurity challenges.
 
